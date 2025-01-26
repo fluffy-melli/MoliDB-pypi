@@ -17,7 +17,7 @@ pip install molidb
 먼저, 서버의 URL과 API 토큰을 설정합니다. `dotenv`를 사용하여 환경 변수를 로드하거나 직접 코드를 수정할 수 있습니다.
 
 ```py
-import molidb
+from molidb import molidb
 
 db = molidb() # 서버 URL / 시크릿 키 / API 토큰은 여기서 변경할수 있어요요
 ```
