@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: molidb
-Version: 0.1.5
+Version: 0.1.6
 Summary: A package for managing collections with AES encryption and compression
 Home-page: https://github.com/fluffy-melli/MoliDB-pypi
 Author: fluffy-melli
