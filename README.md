@@ -19,9 +19,7 @@ pip install molidb
 ```py
 import molidb
 
-molidb.SERVER_URL = "http://127.0.0.1:17233"   # 기본값
-molidb.SECRET_KEY = "ThisIs32byteAESkeyForThisExample" # 기본값
-molidb.API_TOKEN  = 'ThisIsExampleAPIKey'              # 기본값
+db = molidb() # 서버 URL / 시크릿 키 / API 토큰은 여기서 변경할수 있어요요
 ```
 
 ### 2. 데이터 목록 조회
@@ -30,7 +28,7 @@ molidb.API_TOKEN  = 'ThisIsExampleAPIKey'              # 기본값
 
 ```py
 # 컬렉션 목록 조회
-collections = molidb.list_collection()
+collections = db.list_collection()
 print(collections)
 ```
 
@@ -41,7 +39,7 @@ print(collections)
 ```py
 # 특정 컬렉션 조회
 collection_id = 1  # 조회할 컬렉션 ID
-collection_data = molidb.get_collection(collection_id)
+collection_data = db.get_collection(collection_id)
 print(collection_data)
 ```
 
@@ -56,7 +54,7 @@ new_data = {
     "name": "Updated Collection",
     "description": "This is an updated description."
 }
-updated_collection = molidb.update_collection(collection_id, new_data)
+updated_collection = db.update_collection(collection_id, new_data)
 print(updated_collection)
 ```
 
@@ -67,7 +65,7 @@ print(updated_collection)
 ```py
 # 컬렉션 삭제
 collection_id = 1  # 삭제할 컬렉션 ID
-molidb.delete_collection(collection_id)
+db.delete_collection(collection_id)
 print(f"Collection {collection_id} deleted successfully.")
 ```
 
@@ -77,7 +75,7 @@ print(f"Collection {collection_id} deleted successfully.")
 
 ```py
 try:
-    collections = molidb.list_collection()
+    collections = db.list_collection()
     print(collections)
 except Exception as e:
     print(f"Error occurred: {e}")
