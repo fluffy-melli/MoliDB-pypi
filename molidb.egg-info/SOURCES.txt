@@ -1,6 +1,10 @@
-LICENSE
 README.md
 setup.py
+MoliDB.egg-info/PKG-INFO
+MoliDB.egg-info/SOURCES.txt
+MoliDB.egg-info/dependency_links.txt
+MoliDB.egg-info/requires.txt
+MoliDB.egg-info/top_level.txt
 molidb/__init__.py
 molidb/my_module.py
 molidb.egg-info/PKG-INFO
