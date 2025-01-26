@@ -1,0 +1,9 @@
+README.md
+setup.py
+molidb/__init__.py
+molidb/my_module.py
+molidb.egg-info/PKG-INFO
+molidb.egg-info/SOURCES.txt
+molidb.egg-info/dependency_links.txt
+molidb.egg-info/requires.txt
+molidb.egg-info/top_level.txt
